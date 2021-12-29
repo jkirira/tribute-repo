@@ -1,1 +1,1 @@
-<?php include_once(“tribute.html”); ?>
+<?php header ( 'Location: /index.html' ); ?>
