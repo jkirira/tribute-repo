@@ -1,17 +1,17 @@
-<?php
-	header('Content-Type: text/html; charset=utf-8');
-?>
-
-
 <!DOCTYPE html>
 
 <head>
-    <title>
-        Fan Tribute
-    </title>
+    <title>Fan Tribute</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
+    <ul class="menu">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
 
     <header>
         <nav>
@@ -80,10 +80,9 @@
 
 
     <main>
-        <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+        <canvas id="myCanvas" width="300" height="150">
         Your browser does not support the HTML5 canvas tag.
         </canvas>
-
 
         <script>
             var c = document.getElementById("myCanvas");
@@ -104,28 +103,33 @@
             inner_circle.stroke();
         </script> 
 
-        <h2>Wayne Rooney</h2>
+        
         <article id="bio">
-            <h3>Bio</h3>
-            <figure>
+            <h2>Wayne Rooney</h2>
+            
+            <figure class="profile-picture">
                 <img src="assets/img/Rooney_1.jpg" alt="Wayne Rooney at Manchester United">
                 <figcaption>Wayne Rooney at Manchester United in 2016.</figcaption>
-              </figure> 
-            <p>Full name &nbsp Wayne Mark Rooney</p>
-            <p>Date of birth &nbsp 24 October 1985 (age 36)</p>
-            <p>Place of birth &nbsp Liverpool, England</p>
-            <p>Height &nbsp 5 ft 9 in (1.76 m)</p>
-            <p>Position(s) &nbsp Forward, midfielder</p>
+              </figure>
+            <section id="biographys">
+                <h3>Bio</h3> 
+                <p>Full name: &nbsp Wayne Mark Rooney</p>
+                <p>Date of birth: &nbsp 24 October 1985 (age 36)</p>
+                <p>Place of birth: &nbsp Liverpool, England</p>
+                <p>Height: &nbsp 5 ft 9 in (1.76 m)</p>
+                <p>Position(s): &nbsp Forward, midfielder</p>
+            </section>
         </article>
 
         <section id="appearances">
             <h3>Appearances</h3>
-            <table>
-                <tr>
+            <table class="appearance-table">
+                <thead>
                     <th>Years</th>
                     <th>Team</th>
                     <th>No. of Appearances</th>
-                </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>2002–2004</td>
                     <td>Everton</td>
@@ -151,6 +155,7 @@
                     <td>Derby County</td>
                     <td>30</td>
                 </tr>
+            </tbody>
             </table>
         </section>
 
@@ -193,21 +198,33 @@
             
         </section>
 
-	<section>
-		<h3>Goal of the Season 2010/11</h3>
-		<p>The Premier League Goal of the Season is an annual football award for the player to has deemed to have scored the best goal in the Premier League the preceding season. </p>
-		<p>He won the Goal of the Season award for his February 2011 bicycle kick against city rivals Manchester City.</p>
-		<p>Watch the goal here: </p>
-		<iframe src="https://player.vimeo.com/video/128691257?h=6f71819da6" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-		<p><a href="https://vimeo.com/128691257">Wayne Rooney goal vs Manchester City (12.02.2011)</a> from <a href="https://vimeo.com/deanrayper">DeanRayper</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-	</section>
+        <section class="video-section">
+            <h3>Goal of the Season 2010/11</h3>
+            <p>The Premier League Goal of the Season is an annual football award for the player to has deemed to have scored the best goal in the Premier League the preceding season. </p>
+            <p>He won the Goal of the Season award for his February 2011 bicycle kick against city rivals Manchester City.</p>
+            <p>Watch the goal here: </p>
+            <iframe src="https://player.vimeo.com/video/128691257?h=6f71819da6" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/128691257">Wayne Rooney goal vs Manchester City (12.02.2011)</a> from <a href="https://vimeo.com/deanrayper">DeanRayper</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </section>
+
+        <section class="suggestions">
+            <h3>Send us feedback.</h3>
+            <p>We'd love to hear from you</p>
+            <form id="suggestion-form">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="suggestion-box">Suggestion:</label>
+                <textarea name="suggestion" class="suggestion-box" id="suggestion-box" ></textarea> 
+              </form>
+              <button type="button" class="form-button">Send</button>
+        </section>
 
     </main>
 
     <footer>
         <p>Author: James Kirira</p>
         <p>Email: jkirira@cytonn.com</p>
-        (cc) Copied right.
+        <p>(c) copyright.</p>
     </footer>
 </body>
 

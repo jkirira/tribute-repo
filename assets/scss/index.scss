@@ -1,0 +1,116 @@
+@import "../../node_modules/foundation-sites/dist/css//foundation.css";
+
+
+$primary-color: black;
+$secondary-color: white;
+$tertiary-color: red;
+$other-color: yellow;
+
+@mixin middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+body{
+    background: url("../img/wallpaper.jpg");
+    background-size: cover;
+    width: 100%;
+    color: $secondary-color;
+}
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    li { 
+        display: inline-block;
+    }
+  
+    a, a:visited {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+      color: $tertiary-color;
+    }
+}
+
+svg{
+    color: $tertiary-color;
+}
+  
+
+main{
+    padding: 0 25%;
+}
+
+.profile-picture, .video-section h3, #myCanvas, #bio, #appearances, #trophies h3{
+    @include middle;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#myCanvas{
+    margin: auto;
+}
+
+.appearance-table{
+    width: 100%;
+    thead {
+        border-top: 2px solid $primary-color;
+        border-bottom: 2px solid $primary-color;
+        th {
+            text-align: center;
+            padding: 10px;
+            color: $tertiary-color;
+            border: 1px solid $secondary-color;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid $secondary-color;
+            color: $secondary-color;
+            td {
+                padding: 10px;
+                border: 1px solid $secondary-color;
+            }
+            th {
+                padding-left: 10px;
+                border: 1px solid $secondary-color;
+            }
+        }
+    }
+}
+
+section h3{
+    color: $other-color;
+    font-size: 1.5em;
+}
+
+details, summary{
+    padding: 5px;
+}
+
+details{
+    [open]{
+        color: $other-color;
+    }
+}
+
+.form-button {
+    color: $secondary-color;
+    background-color: $tertiary-color;
+    text-decoration:none;
+    padding:5px 10px;
+    margin-top:10px; 
+    border-radius:3px;
+    font-size:1em;
+}
+

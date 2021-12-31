@@ -1,0 +1,78 @@
+@import url(../../node_modules/foundation-sites/dist/css//foundation.css);
+body {
+  background: url("../img/wallpaper.jpg");
+  background-size: cover;
+  width: 100%;
+  color: white; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a, nav a:visited {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: red; }
+
+svg {
+  color: red; }
+
+main {
+  padding: 0 25%; }
+
+.profile-picture, .video-section h3, #myCanvas, #bio, #appearances, #trophies h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.profile-picture img {
+  border-radius: 50%;
+  margin: 10px; }
+
+#myCanvas {
+  margin: auto; }
+
+.appearance-table {
+  width: 100%; }
+  .appearance-table thead {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; }
+    .appearance-table thead th {
+      text-align: center;
+      padding: 10px;
+      color: red;
+      border: 1px solid white; }
+  .appearance-table tbody tr {
+    border-bottom: 1px solid white;
+    color: white; }
+    .appearance-table tbody tr td {
+      padding: 10px;
+      border: 1px solid white; }
+    .appearance-table tbody tr th {
+      padding-left: 10px;
+      border: 1px solid white; }
+
+section h3 {
+  color: yellow;
+  font-size: 1.5em; }
+
+details, summary {
+  padding: 5px; }
+
+details [open] {
+  color: yellow; }
+
+.form-button {
+  color: white;
+  background-color: red;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 3px;
+  font-size: 1em; }
