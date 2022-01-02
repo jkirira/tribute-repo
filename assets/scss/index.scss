@@ -1,54 +1,26 @@
 @import "../../node_modules/foundation-sites/dist/css//foundation.css";
 
 
-$primary-color: black;
-$secondary-color: white;
-$tertiary-color: red;
-$other-color: yellow;
-
 @mixin middle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-  
+
 body{
-    background: url("../img/wallpaper.jpg");
-    background-size: cover;
-    width: 100%;
-    color: $secondary-color;
+    background: #F5F5F5;
 }
 
-nav {
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-  
-    li { 
-        display: inline-block;
-    }
-  
-    a, a:visited {
-      display: block;
-      padding: 6px 12px;
-      text-decoration: none;
-      color: $tertiary-color;
-    }
+.title-bar{
+    background-color: transparent;
+}
+.menu-icon-wrapper{
+    padding: 10px;
+    background-color: #000000;
 }
 
-svg{
-    color: $tertiary-color;
-}
-  
-
-main{
-    padding: 0 25%;
-}
-
-.profile-picture, .video-section h3, #myCanvas, #bio, #appearances, #trophies h3{
+.profile-picture, .video-section h3, #bio, #appearances, #trophies h3{
     @include middle;
 }
 
@@ -57,10 +29,29 @@ main{
     margin: 10px;
 }
 
+.card-section img{
+    height: 100px;
+    width: 100px;
+}
+
 #myCanvas{
     margin: auto;
 }
 
+.footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*
+
+main{
+    padding: 0 25%;
+}
+.card{
+    height: 300px;
+    width: 300px;
+}
 .appearance-table{
     width: 100%;
     thead {
@@ -114,3 +105,4 @@ details{
     font-size:1em;
 }
 
+*/
