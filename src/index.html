@@ -11,28 +11,28 @@
 </head>
 <body>
     
-    <div class="grid grid-cols-1 p-2 lg:grid-cols-2 w-auto">
+    <div class="grid grid-cols-1 p-2 md:grid-cols-2 w-auto bg-black text-white">
         <div class="logo flex items-center justify-center">
             <p class="text-center">Tribute</p>
         </div>
 
         <div class=" menu flex flex-end items-center justify-center">
-            <ul class="flex flex-col list-none">
-                <li class="text-center"><a href="#bio">Bio</a></li>
-                <li class="text-center"><a href="#appearances">Appearances</a></li>
-                <li class="text-center"><a href="#trophies">Trophies</a></li>
+            <ul class="flex flex-col md:flex-row list-none">
+                <li class="text-center px-6"><a href="#bio">Bio</a></li>
+                <li class="text-center px-6"><a href="#appearances">Appearances</a></li>
+                <li class="text-center px-6"><a href="#trophies">Trophies</a></li>
             </ul>
         </div>
     
     </div>
 
-    <div class="grid grid-rows-1 lg:grid-cols-3 bg-blue w-auto">
+    <div class="grid grid-rows-3 grid-cols-1 lg:grid-cols-3 h-auto w-auto">
 
-            <div class="hiddn lg:flex"></div>
+            <div class="hidden h-0 lg:flex lg:h-auto"></div>
 
-            <div class="grid grid-cols-1 w-auto">
+            <div class="grid grid-cols-1 grid-rows-5 w-auto">
 
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-center">
                     <h2 class="text-center">Wayne Rooney</h2>
                     <figure class="flex flex-col items-center justify-center">
                         <img src="/img/Rooney_1.jpg" alt="Wayne Rooney at Manchester United">
@@ -48,33 +48,45 @@
                     </section>
                 </div>
 
-                <div class="flex mt-1">
+                <div class="flex flex-col mt-2 p-3">
                     <section id="appearances p-3">
                         <h3 class="text-center">Appearances</h3>
-                        <div class = "">
-                            <table class=" ">
-                                <thead>
-                                    <th>Years</th><th>Team</th><th>No. of Appearances</th>
-                                </thead>
-                                <tbody>
+                        <table>
+						<thead>
+							<tr>
+								<th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600">Years</th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600">Team</th>
+                                <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-gray-600">No. of Appearances</th>
+                            </tr>
+                            </thead>
+                            <tbody>
                                     <tr>
-                                        <td>2002–2004</td><td>Everton</td><td>67</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">2002–2004</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Everton</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">67</td>
                                     </tr>
                                     <tr>
-                                        <td>2004–2017</td><td>Manchester United</td><td>393</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">2004–2017</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Manchester United</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">393</td>
                                     </tr>
                                     <tr>
-                                        <td>2017–2018</td><td>Everton</td><td>31</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">2017–2018</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Everton</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">31</td>
                                     </tr>
                                     <tr>
-                                        <td>2018–2020</td><td>D.C. United</td><td>48</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">2018–2020</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">D.C. United</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">48</td>
                                     </tr>
                                     <tr>
-                                        <td>2020–2021</td><td>Derby County</td><td>30</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">2020–2021</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">Derby County</td>
+                                        <td class="px-5 py-5 border-b border-gray-200 bg-white">30</td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
                     </section>
                 </div>
 
@@ -82,7 +94,7 @@
 
                     <h3 class="text-center">Trophies</h3>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-4 flex flex-col md:flex-row">
 
                         <div class="grid grid-rows-2 w-auto p-1 m-3 max-h-[300px] border border-gray-300">
                             <div class="card-img flex items-center justify-center p-2">
@@ -112,8 +124,7 @@
                                 <p>EFL Cup (3)</p>
                                 <p>2005–06, 2009–10, 2016–17</p>
                             </div>
-                        </div>
-                        
+                        </div>               
                         
                         <div class="grid grid-rows-2 w-auto p-1 m-3 max-h-[300px] border border-gray-300">
                             <div class="card-img flex items-center justify-center p-2">
@@ -172,7 +183,6 @@
                     </section>
                 </div>
 
-
                 <div class="flex flex-col mt-1 p-3">
                     <h3>Send us feedback.</h3>
                     <p>We'd love to hear from you</p>
@@ -198,12 +208,14 @@
                     
                 </div>
 
-
             </div>
 
-            <div class="flex"></div>
+            <div class="hidden lg:flex"></div>
+
 
     </div>
+
+    
 
     <div class="flex mt-1 bg-black text-white justify around">
             <p>Author: James Kirira</p>
