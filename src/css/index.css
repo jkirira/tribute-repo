@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.first-block{
-    background-color: theme('colors.blue.500');
+body{
+    background: url('img/download.jpg');
 }
-
 .icon-small{
     width: 150px;
     height: 150px;
